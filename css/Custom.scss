@@ -1,0 +1,391 @@
+$PrimaryColor: #29377c;
+$SecondaryColor: #ffffff;
+$TagColor: #3a4ea6;
+
+// mixins
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin transition($time, $ease) {
+    transition: $time $ease;
+}
+
+a {
+    opacity: 0.9;
+    cursor: pointer;
+    @include transition(0.2s, ease-in-out);
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.btn.btn-primary {
+    background-color: $PrimaryColor;
+    border: 1px solid $PrimaryColor;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: $SecondaryColor;
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    opacity: 0.9;
+    @include transition(0.2s, ease-in-out);
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.btn-outline-primary {
+    background-color: transparent;
+    border: 1px solid $PrimaryColor;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: $PrimaryColor;
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    opacity: 0.9;
+    @include transition(0.2s, ease-in-out);
+
+    &:hover {
+        background-color: $PrimaryColor;
+        color: $SecondaryColor;
+        border: $PrimaryColor 1px solid;
+        opacity: 1;
+    }
+}
+
+section>.container>.title{
+    color: $PrimaryColor;
+    font-size: 30px;
+    line-height: 41px;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+        border-bottom: 2px solid $PrimaryColor;
+        margin-bottom: 20px;
+    }
+}
+
+section {
+    padding-top: 100px;
+}
+
+nav {
+    padding: 40px 0;
+
+    .nav-items {
+
+        .nav-item {
+            margin-right: 40px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                color: $PrimaryColor;
+                font-size: 18px;
+                line-height: 19px;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.slider {
+    .slider-container {
+        height: 70vh;
+        align-items: center;
+
+        .text-holder {
+            flex: 0.5;
+
+            .title {
+                color: $PrimaryColor;
+                font-size: 40px;
+                line-height: 41px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            h5 {
+                color: $PrimaryColor;
+                font-size: 20px;
+                line-height: 21px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: #000;
+                font-size: 16px;
+                line-height: 25px;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+
+            .btns {
+                button {
+                    margin-right: 20px;
+                }
+
+                .icon {
+                    align-self: center;
+                    opacity: 0.9;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+
+            }
+        }
+
+        .image-holder {
+            flex: 0.4;
+
+            img {
+                border-radius: 90% 190%;
+                width: 80%;
+                //shadow
+                box-shadow: 6px 4px 17px 3px rgba(41,55,124,0.3);
+                -webkit-box-shadow: 6px 4px 17px 3px rgba(41,55,124,0.3);
+                -moz-box-shadow: 6px 4px 17px 3px rgba(41,55,124,0.3);
+
+            }
+        }
+    }
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.skills {
+    padding-top: 70px;
+
+    .skills-section {
+        .skill {
+            margin-bottom: 30px;
+            align-items: center;
+
+            .skill-title {
+                color: $PrimaryColor;
+                font-size: 18px;
+                line-height: 19px;
+                font-weight: 700;
+                flex: 0.1;
+            }
+
+            .skill-bar {
+                height: 10px;
+                background-color: #E5E5E5;
+                border-radius: 5px;
+                position: relative;
+                width: 100%;
+                flex: 0.9;
+                margin: 10px 25px;
+
+                .skill-bar-fill {
+                    position: absolute;
+                    height: 100%;
+                    background-color: $PrimaryColor;
+                    border-radius: 5px;
+                }
+            }
+
+            .percentage {
+                color: $PrimaryColor;
+                font-size: 14px;
+                line-height: 15px;
+                font-weight: 700;
+                margin-top: 5px;
+            }
+        }
+
+        .title{
+            color: $PrimaryColor;
+            font-size: 24px;
+            line-height: 41px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+            border-bottom: 1px solid #E5E5E5;
+            margin-bottom: 20px;
+        }
+
+        &:last-child {
+            &:after {
+                border-bottom: none;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.Jobs{
+    .job{
+        margin-bottom: 100px;
+
+        .text-holder {
+            flex: 0.8;
+            align-self: center;
+
+            .job-title {
+                h3 {
+                    color: $PrimaryColor;
+                    font-size: 24px;
+                    line-height: 41px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+
+                h4 {
+                    color: $PrimaryColor;
+                    font-size: 18px;
+                    line-height: 19px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+
+                a{
+                    color: $PrimaryColor;
+                    font-size: 18px;
+                    line-height: 19px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                    text-decoration: underline;
+                }
+            }
+
+            .job-description {
+                p {
+                    color: $PrimaryColor;
+                    font-size: 16px;
+                    line-height: 25px;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .image-holder{
+            flex: 0.2;
+            width: 260px;
+            height: 265px;
+            background: $SecondaryColor;
+            border-radius: 10px;
+            padding: 20px;
+            align-items: center;
+            //shadow
+            box-shadow: 6px 4px 17px 3px rgba(41,55,124,0.3);
+            -webkit-box-shadow: 6px 4px 17px 3px rgba(41,55,124,0.3);
+            -moz-box-shadow: 6px 4px 17px 3px rgba(41,55,124,0.3);
+
+            img {
+                width: 90%;
+                object-fit: cover;
+            }
+        }
+
+        &:nth-child(2n+1){
+            //flex-direction: row-reverse;
+
+            //.image-holder{
+            //    margin-right: 40px;
+            //}
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+            border-bottom: 2px solid $PrimaryColor;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.tag-list{
+    margin-bottom: 100px;
+    padding-left: 0;
+
+    .tag{
+        background-color: $TagColor;
+        color: $SecondaryColor;
+        font-size: 14px;
+        line-height: 15px;
+        font-weight: 700;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+}
+
+.Contact{
+    .text-holder{
+        flex: 0.6;
+
+        .title{
+            color: $PrimaryColor;
+            font-size: 24px;
+            line-height: 41px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        p{
+            color: $PrimaryColor;
+            font-size: 16px;
+            line-height: 25px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+    }
+
+    .image-holder{
+        flex: 0.4;
+
+        .contact-info-item-text{
+            display: flex;
+        }
+        img{
+            width: 50px;
+            border-radius: 5px;
+            //shadow
+            box-shadow: 6px 4px 17px 3px rgba(41,55,124,0.3);
+            -webkit-box-shadow: 6px 4px 17px 3px rgba(41,55,124,0.3);
+            -moz-box-shadow: 6px 4px 17px 3px rgba(41,55,124,0.3);
+        }
+    }
+}

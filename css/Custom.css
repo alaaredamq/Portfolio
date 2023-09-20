@@ -1,0 +1,307 @@
+a {
+  opacity: 0.9;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+a:hover {
+  opacity: 1;
+}
+
+.btn.btn-primary {
+  background-color: #29377c;
+  border: 1px solid #29377c;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: 0.2s ease-in-out;
+}
+.btn.btn-primary:hover {
+  opacity: 1;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  border: 1px solid #29377c;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #29377c;
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: 0.2s ease-in-out;
+}
+.btn-outline-primary:hover {
+  background-color: #29377c;
+  color: #ffffff;
+  border: #29377c 1px solid;
+  opacity: 1;
+}
+
+section > .container > .title {
+  color: #29377c;
+  font-size: 30px;
+  line-height: 41px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+section > .container > .title:after {
+  content: "";
+  display: block;
+  clear: both;
+  border-bottom: 2px solid #29377c;
+  margin-bottom: 20px;
+}
+
+section {
+  padding-top: 100px;
+}
+
+nav {
+  padding: 40px 0;
+}
+nav .nav-items .nav-item {
+  margin-right: 40px;
+}
+nav .nav-items .nav-item:last-child {
+  margin-right: 0;
+}
+nav .nav-items .nav-item a {
+  color: #29377c;
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.slider .slider-container {
+  height: 70vh;
+  align-items: center;
+}
+.slider .slider-container .text-holder {
+  flex: 0.5;
+}
+.slider .slider-container .text-holder .title {
+  color: #29377c;
+  font-size: 40px;
+  line-height: 41px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.slider .slider-container .text-holder h5 {
+  color: #29377c;
+  font-size: 20px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.slider .slider-container .text-holder p {
+  color: #000;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.slider .slider-container .text-holder .btns button {
+  margin-right: 20px;
+}
+.slider .slider-container .text-holder .btns .icon {
+  align-self: center;
+  opacity: 0.9;
+}
+.slider .slider-container .text-holder .btns .icon:hover {
+  opacity: 1;
+}
+.slider .slider-container .image-holder {
+  flex: 0.4;
+}
+.slider .slider-container .image-holder img {
+  border-radius: 90% 190%;
+  width: 80%;
+  box-shadow: 6px 4px 17px 3px rgba(41, 55, 124, 0.3);
+  -webkit-box-shadow: 6px 4px 17px 3px rgba(41, 55, 124, 0.3);
+  -moz-box-shadow: 6px 4px 17px 3px rgba(41, 55, 124, 0.3);
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.icon:last-child {
+  margin-right: 0;
+}
+
+.skills {
+  padding-top: 70px;
+}
+.skills .skills-section .skill {
+  margin-bottom: 30px;
+  align-items: center;
+}
+.skills .skills-section .skill .skill-title {
+  color: #29377c;
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: 700;
+  flex: 0.1;
+}
+.skills .skills-section .skill .skill-bar {
+  height: 10px;
+  background-color: #E5E5E5;
+  border-radius: 5px;
+  position: relative;
+  width: 100%;
+  flex: 0.9;
+  margin: 10px 25px;
+}
+.skills .skills-section .skill .skill-bar .skill-bar-fill {
+  position: absolute;
+  height: 100%;
+  background-color: #29377c;
+  border-radius: 5px;
+}
+.skills .skills-section .skill .percentage {
+  color: #29377c;
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+.skills .skills-section .title {
+  color: #29377c;
+  font-size: 24px;
+  line-height: 41px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.skills .skills-section:after {
+  content: "";
+  display: block;
+  clear: both;
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 20px;
+}
+.skills .skills-section:last-child:after {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.Jobs .job {
+  margin-bottom: 100px;
+}
+.Jobs .job .text-holder {
+  flex: 0.8;
+  align-self: center;
+}
+.Jobs .job .text-holder .job-title h3 {
+  color: #29377c;
+  font-size: 24px;
+  line-height: 41px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.Jobs .job .text-holder .job-title h4 {
+  color: #29377c;
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.Jobs .job .text-holder .job-title a {
+  color: #29377c;
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+.Jobs .job .text-holder .job-description p {
+  color: #29377c;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.Jobs .job .image-holder {
+  flex: 0.2;
+  width: 260px;
+  height: 265px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  align-items: center;
+  box-shadow: 6px 4px 17px 3px rgba(41, 55, 124, 0.3);
+  -webkit-box-shadow: 6px 4px 17px 3px rgba(41, 55, 124, 0.3);
+  -moz-box-shadow: 6px 4px 17px 3px rgba(41, 55, 124, 0.3);
+}
+.Jobs .job .image-holder img {
+  width: 90%;
+  object-fit: cover;
+}
+.Jobs .job:after {
+  content: "";
+  display: block;
+  clear: both;
+  border-bottom: 2px solid #29377c;
+  margin-bottom: 20px;
+}
+
+.tag-list {
+  margin-bottom: 100px;
+  padding-left: 0;
+}
+.tag-list .tag {
+  background-color: #3a4ea6;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.Contact .text-holder {
+  flex: 0.6;
+}
+.Contact .text-holder .title {
+  color: #29377c;
+  font-size: 24px;
+  line-height: 41px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.Contact .text-holder p {
+  color: #29377c;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.Contact .image-holder {
+  flex: 0.4;
+}
+.Contact .image-holder .contact-info-item-text {
+  display: flex;
+}
+.Contact .image-holder img {
+  width: 50px;
+  border-radius: 5px;
+  box-shadow: 6px 4px 17px 3px rgba(41, 55, 124, 0.3);
+  -webkit-box-shadow: 6px 4px 17px 3px rgba(41, 55, 124, 0.3);
+  -moz-box-shadow: 6px 4px 17px 3px rgba(41, 55, 124, 0.3);
+}
+
+/*# sourceMappingURL=Custom.css.map */
